@@ -2,68 +2,68 @@
 #include <string>
 
 /// <summary>
-/// Пользователь.
+/// РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ.
 /// </summary>
 class User
 {
 private:
 	/// <summary>
-	/// Логин.
+	/// Р›РѕРіРёРЅ.
 	/// </summary>
 	const std::string _login;
 
 	/// <summary>
-	/// Пароль.
+	/// РџР°СЂРѕР»СЊ.
 	/// </summary>
 	std::string _password;
 
 	/// <summary>
-	/// Имя.
+	/// РРјСЏ.
 	/// </summary>
 	std::string _name;
 
 public:
 	/// <summary>
-	/// Конструктор.
+	/// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ.
 	/// </summary>
-	/// <param name="login"> Логин.</param>
-	/// <param name="password"> Пароль.</param>
-	/// <param name="name"> Имя.</param>
+	/// <param name="login"> Р›РѕРіРёРЅ.</param>
+	/// <param name="password"> РџР°СЂРѕР»СЊ.</param>
+	/// <param name="name"> РРјСЏ.</param>
 	User(const std::string& login, const std::string& password, const std::string& name)
 		:_login(login), _password(password), _name(name) {};
 
 	/// <summary>
-	/// Деструктор по умолчанию.
+	/// Р”РµСЃС‚СЂСѓРєС‚РѕСЂ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ.
 	/// </summary>
 	~User() = default;
 
 	/// <summary>
-	/// Получить логин.
+	/// РџРѕР»СѓС‡РёС‚СЊ Р»РѕРіРёРЅ.
 	/// </summary>
-	/// <returns> Логин.</returns>
+	/// <returns> Р›РѕРіРёРЅ.</returns>
 	const std::string& getLogin() const { return _login; };
 
 	/// <summary>
-	/// Получить пароль.
+	/// РџРѕР»СѓС‡РёС‚СЊ РїР°СЂРѕР»СЊ.
 	/// </summary>
-	/// <returns> Пароль.</returns>
+	/// <returns> РџР°СЂРѕР»СЊ.</returns>
 	const std::string& getPassword() const { return _password; };
 
 	/// <summary>
-	/// Установить пароль.
+	/// РЈСЃС‚Р°РЅРѕРІРёС‚СЊ РїР°СЂРѕР»СЊ.
 	/// </summary>
-	/// <param name="password"> Пароль.</param>
+	/// <param name="password"> РџР°СЂРѕР»СЊ.</param>
 	void setPassword(const std::string& password) { _password = password; };
 
 	/// <summary>
-	/// Получить Имя.
+	/// РџРѕР»СѓС‡РёС‚СЊ РРјСЏ.
 	/// </summary>
-	/// <returns> Имя.</returns>
+	/// <returns> РРјСЏ.</returns>
 	const std::string& getName() const { return _name; }
 
 	/// <summary>
-	/// Усановить имя.
+	/// РЈСЃР°РЅРѕРІРёС‚СЊ РёРјСЏ.
 	/// </summary>
-	/// <param name="name"> Имя.</param>
+	/// <param name="name"> РРјСЏ.</param>
 	void setName(const std::string& name) { _name = name; };
 };
