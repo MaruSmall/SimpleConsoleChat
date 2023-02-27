@@ -2,7 +2,7 @@
 #include <memory>
 
 /// <summary>
-/// Обработка ошибки с дублирующим логин пользователя.
+/// Обработка ошибки с дублирующим логин пользователя. 
 /// </summary>
 struct UserLoginExp : public std::exception {
 	const char* what() const noexcept override 

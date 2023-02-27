@@ -2,45 +2,45 @@
 #include <string>
 
 /// <summary>
-/// Сообщение
+/// РЎРѕРѕР±С‰РµРЅРёРµ.
 /// </summary>
 /// <typeparam name="T"></typeparam>
 template <typename T> class Message
 {
 private:
 	/// <summary>
-	/// От кого.
+	/// РћС‚ РєРѕРіРѕ.
 	/// </summary>
 	const std::string _from;
 
 	/// <summary>
-	/// Кому.
+	/// РљРѕРјСѓ.
 	/// </summary>
 	const std::string _to;
 
 	/// <summary>
-	/// Тело сообщения. 
+	/// РўРµР»Рѕ СЃРѕРѕР±С‰РµРЅРёСЏ. 
 	/// </summary>
 	const T _messageBody;
 
 public:
 	/// <summary>
-	/// Конструктор.
+	/// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ.
 	/// </summary>
-	/// <param name="from"> От кого.</param>
-	/// <param name="to"> Кому.</param>
-	/// <param name="messageBody"> Тело сообщения.</param>
+	/// <param name="from"> РћС‚ РєРѕРіРѕ.</param>
+	/// <param name="to"> РљРѕРјСѓ.</param>
+	/// <param name="messageBody"> РўРµР»Рѕ СЃРѕРѕР±С‰РµРЅРёСЏ.</param>
 	Message(const std::string& from, const std::string& to, const T& messageBody)
 		: _from(from), _to(to), _messageBody(messageBody) {};
 
 	Message() = default;
 	/// <summary>
-	/// Деструктор.
+	/// Р”РµСЃС‚СЂСѓРєС‚РѕСЂ.
 	/// </summary>
 	~Message() = default;
 
 	/// <summary>
-	/// От кого сообщение.
+	/// РћС‚ РєРѕРіРѕ СЃРѕРѕР±С‰РµРЅРёРµ.
 	/// </summary>
 	/// <returns></returns>
 	const std::string& getFrom() const 
@@ -49,7 +49,7 @@ public:
 	};
 
 	/// <summary>
-	/// Кому сообщение.
+	/// РљРѕРјСѓ СЃРѕРѕР±С‰РµРЅРёРµ.
 	/// </summary>
 	/// <returns></returns>
 	const std::string& getTo() const 
@@ -58,7 +58,7 @@ public:
 	};
 
 	/// <summary>
-	/// Получить тело сообщения.
+	/// РџРѕР»СѓС‡РёС‚СЊ С‚РµР»Рѕ СЃРѕРѕР±С‰РµРЅРёСЏ.
 	/// </summary>
 	/// <returns></returns>
 	const T& getText() const 
